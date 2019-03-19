@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[CourseNotificationLog] (
+    [Id]               INT           NOT NULL,
+    [Reference]       VARCHAR (50)  NOT NULL,
+    [Name]    VARCHAR (200) NOT NULL,
+    [Date]      VARCHAR (50)  NOT NULL,
+    [NextDate]      VARCHAR (50)  NULL,
+    [AttendeeCount]      VARCHAR (50)  NOT NULL,
+    [PassedCount]         VARCHAR (50)  NOT NULL,
+    [FailedCount]       VARCHAR (50)  NOT NULL,
+    [Place]    VARCHAR (200) NOT NULL,
+    [AttendeeType]  VARCHAR (50)  NOT NULL,
+    [Type]              VARCHAR (50)  NOT NULL,
+    [Kind]             VARCHAR (50)  NOT NULL,
+    [ExamType]    VARCHAR (50)  NOT NULL,
+    [Organization]      VARCHAR (100) NOT NULL,
+    [Lector]           VARCHAR (101) NOT NULL,
+    [CommitteeHead]  VARCHAR (101) NOT NULL,
+    [CommitteeMember1]     VARCHAR (101) NOT NULL,
+    [CommitteeMember2]     VARCHAR (101) NOT NULL,
+    [Email]            VARCHAR (302) NOT NULL,
+    [NextIn]    VARCHAR (20)  NOT NULL,
+    [NotificationId]   INT           IDENTITY (1, 1) NOT NULL,
+    [InsertedDateTime] DATETIME      CONSTRAINT [DF_SkolenieNotificated_InsertedDateTime] DEFAULT (getdate()) NULL,
+    CONSTRAINT [PK_CourseNotificationLog] PRIMARY KEY CLUSTERED ([NotificationId] ASC)
+);
+

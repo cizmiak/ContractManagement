@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SpravaZmluvUser]
+    WITH PASSWORD = N'vEwjs>lzbn0fy{byhGjoynC;msFT7_&#$!~<b4bo{?fs{Qqh', SID = 0x74A68DA494B95A4A83B06165B54F9387, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+
